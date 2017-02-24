@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>herCall.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>herCallUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>makingHer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>F5F6A21E1E5EE8220018C3F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5F6A2351E5EEEEA0018C3F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5F6A23E1E5EEEEA0018C3F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

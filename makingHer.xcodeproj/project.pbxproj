@@ -15,6 +15,13 @@
 		F5F6A20E1E5EE8220018C3F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F6A20C1E5EE8220018C3F7 /* LaunchScreen.storyboard */; };
 		F5F6A2191E5EE8220018C3F7 /* makingHerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6A2181E5EE8220018C3F7 /* makingHerTests.swift */; };
 		F5F6A2241E5EE8220018C3F7 /* makingHerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6A2231E5EE8220018C3F7 /* makingHerUITests.swift */; };
+		F5F6A2391E5EEEEA0018C3F7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6A2381E5EEEEA0018C3F7 /* IntentHandler.swift */; };
+		F5F6A2421E5EEEEA0018C3F7 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F6A2411E5EEEEA0018C3F7 /* IntentsUI.framework */; };
+		F5F6A2451E5EEEEA0018C3F7 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6A2441E5EEEEA0018C3F7 /* IntentViewController.swift */; };
+		F5F6A2481E5EEEEA0018C3F7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F6A2461E5EEEEA0018C3F7 /* MainInterface.storyboard */; };
+		F5F6A24C1E5EEEEA0018C3F7 /* herCallUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5F6A23F1E5EEEEA0018C3F7 /* herCallUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5F6A24F1E5EEEEA0018C3F7 /* herCall.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5F6A2361E5EEEEA0018C3F7 /* herCall.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5F6A2581E5EF3050018C3F7 /* SendPaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6A2571E5EF3050018C3F7 /* SendPaymentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +39,36 @@
 			remoteGlobalIDString = F5F6A1FC1E5EE8220018C3F7;
 			remoteInfo = makingHer;
 		};
+		F5F6A24A1E5EEEEA0018C3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F6A1F51E5EE8220018C3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5F6A23E1E5EEEEA0018C3F7;
+			remoteInfo = herCallUI;
+		};
+		F5F6A24D1E5EEEEA0018C3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F6A1F51E5EE8220018C3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5F6A2351E5EEEEA0018C3F7;
+			remoteInfo = herCall;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5F6A2561E5EEEEA0018C3F7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F5F6A24F1E5EEEEA0018C3F7 /* herCall.appex in Embed App Extensions */,
+				F5F6A24C1E5EEEEA0018C3F7 /* herCallUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F5F6A1FD1E5EE8220018C3F7 /* makingHer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makingHer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +85,16 @@
 		F5F6A21F1E5EE8220018C3F7 /* makingHerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makingHerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F6A2231E5EE8220018C3F7 /* makingHerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makingHerUITests.swift; sourceTree = "<group>"; };
 		F5F6A2251E5EE8220018C3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F6A2311E5EE9F20018C3F7 /* makingHer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = makingHer.entitlements; sourceTree = "<group>"; };
+		F5F6A2361E5EEEEA0018C3F7 /* herCall.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = herCall.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F6A2381E5EEEEA0018C3F7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		F5F6A23A1E5EEEEA0018C3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F6A23F1E5EEEEA0018C3F7 /* herCallUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = herCallUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F6A2411E5EEEEA0018C3F7 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		F5F6A2441E5EEEEA0018C3F7 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		F5F6A2471E5EEEEA0018C3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F5F6A2491E5EEEEA0018C3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F6A2571E5EF3050018C3F7 /* SendPaymentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +119,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5F6A2331E5EEEEA0018C3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F6A23C1E5EEEEA0018C3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F6A2421E5EEEEA0018C3F7 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +143,9 @@
 				F5F6A1FF1E5EE8220018C3F7 /* makingHer */,
 				F5F6A2171E5EE8220018C3F7 /* makingHerTests */,
 				F5F6A2221E5EE8220018C3F7 /* makingHerUITests */,
+				F5F6A2371E5EEEEA0018C3F7 /* herCall */,
+				F5F6A2431E5EEEEA0018C3F7 /* herCallUI */,
+				F5F6A2401E5EEEEA0018C3F7 /* Frameworks */,
 				F5F6A1FE1E5EE8220018C3F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +156,8 @@
 				F5F6A1FD1E5EE8220018C3F7 /* makingHer.app */,
 				F5F6A2141E5EE8220018C3F7 /* makingHerTests.xctest */,
 				F5F6A21F1E5EE8220018C3F7 /* makingHerUITests.xctest */,
+				F5F6A2361E5EEEEA0018C3F7 /* herCall.appex */,
+				F5F6A23F1E5EEEEA0018C3F7 /* herCallUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +165,7 @@
 		F5F6A1FF1E5EE8220018C3F7 /* makingHer */ = {
 			isa = PBXGroup;
 			children = (
+				F5F6A2311E5EE9F20018C3F7 /* makingHer.entitlements */,
 				F5F6A2001E5EE8220018C3F7 /* AppDelegate.swift */,
 				F5F6A2021E5EE8220018C3F7 /* ViewController.swift */,
 				F5F6A2041E5EE8220018C3F7 /* Main.storyboard */,
@@ -128,6 +195,34 @@
 			path = makingHerUITests;
 			sourceTree = "<group>";
 		};
+		F5F6A2371E5EEEEA0018C3F7 /* herCall */ = {
+			isa = PBXGroup;
+			children = (
+				F5F6A2381E5EEEEA0018C3F7 /* IntentHandler.swift */,
+				F5F6A23A1E5EEEEA0018C3F7 /* Info.plist */,
+				F5F6A2571E5EF3050018C3F7 /* SendPaymentHandler.swift */,
+			);
+			path = herCall;
+			sourceTree = "<group>";
+		};
+		F5F6A2401E5EEEEA0018C3F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5F6A2411E5EEEEA0018C3F7 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5F6A2431E5EEEEA0018C3F7 /* herCallUI */ = {
+			isa = PBXGroup;
+			children = (
+				F5F6A2441E5EEEEA0018C3F7 /* IntentViewController.swift */,
+				F5F6A2461E5EEEEA0018C3F7 /* MainInterface.storyboard */,
+				F5F6A2491E5EEEEA0018C3F7 /* Info.plist */,
+			);
+			path = herCallUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +233,13 @@
 				F5F6A1F91E5EE8220018C3F7 /* Sources */,
 				F5F6A1FA1E5EE8220018C3F7 /* Frameworks */,
 				F5F6A1FB1E5EE8220018C3F7 /* Resources */,
+				F5F6A2561E5EEEEA0018C3F7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F5F6A24B1E5EEEEA0018C3F7 /* PBXTargetDependency */,
+				F5F6A24E1E5EEEEA0018C3F7 /* PBXTargetDependency */,
 			);
 			name = makingHer;
 			productName = makingHer;
@@ -184,6 +282,40 @@
 			productReference = F5F6A21F1E5EE8220018C3F7 /* makingHerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F5F6A2351E5EEEEA0018C3F7 /* herCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F6A2531E5EEEEA0018C3F7 /* Build configuration list for PBXNativeTarget "herCall" */;
+			buildPhases = (
+				F5F6A2321E5EEEEA0018C3F7 /* Sources */,
+				F5F6A2331E5EEEEA0018C3F7 /* Frameworks */,
+				F5F6A2341E5EEEEA0018C3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = herCall;
+			productName = herCall;
+			productReference = F5F6A2361E5EEEEA0018C3F7 /* herCall.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F5F6A23E1E5EEEEA0018C3F7 /* herCallUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F6A2501E5EEEEA0018C3F7 /* Build configuration list for PBXNativeTarget "herCallUI" */;
+			buildPhases = (
+				F5F6A23B1E5EEEEA0018C3F7 /* Sources */,
+				F5F6A23C1E5EEEEA0018C3F7 /* Frameworks */,
+				F5F6A23D1E5EEEEA0018C3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = herCallUI;
+			productName = herCallUI;
+			productReference = F5F6A23F1E5EEEEA0018C3F7 /* herCallUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,8 +328,13 @@
 				TargetAttributes = {
 					F5F6A1FC1E5EE8220018C3F7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5H99ZYMEE4;
+						DevelopmentTeam = 4W2YSC7A3U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					F5F6A2131E5EE8220018C3F7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -210,6 +347,16 @@
 						DevelopmentTeam = 5H99ZYMEE4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F5F6A1FC1E5EE8220018C3F7;
+					};
+					F5F6A2351E5EEEEA0018C3F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4W2YSC7A3U;
+						ProvisioningStyle = Automatic;
+					};
+					F5F6A23E1E5EEEEA0018C3F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4W2YSC7A3U;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -229,6 +376,8 @@
 				F5F6A1FC1E5EE8220018C3F7 /* makingHer */,
 				F5F6A2131E5EE8220018C3F7 /* makingHerTests */,
 				F5F6A21E1E5EE8220018C3F7 /* makingHerUITests */,
+				F5F6A2351E5EEEEA0018C3F7 /* herCall */,
+				F5F6A23E1E5EEEEA0018C3F7 /* herCallUI */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +404,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F6A2341E5EEEEA0018C3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F6A23D1E5EEEEA0018C3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F6A2481E5EEEEA0018C3F7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +451,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5F6A2321E5EEEEA0018C3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F6A2391E5EEEEA0018C3F7 /* IntentHandler.swift in Sources */,
+				F5F6A2581E5EF3050018C3F7 /* SendPaymentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F6A23B1E5EEEEA0018C3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F6A2451E5EEEEA0018C3F7 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +480,16 @@
 			isa = PBXTargetDependency;
 			target = F5F6A1FC1E5EE8220018C3F7 /* makingHer */;
 			targetProxy = F5F6A2201E5EE8220018C3F7 /* PBXContainerItemProxy */;
+		};
+		F5F6A24B1E5EEEEA0018C3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5F6A23E1E5EEEEA0018C3F7 /* herCallUI */;
+			targetProxy = F5F6A24A1E5EEEEA0018C3F7 /* PBXContainerItemProxy */;
+		};
+		F5F6A24E1E5EEEEA0018C3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5F6A2351E5EEEEA0018C3F7 /* herCall */;
+			targetProxy = F5F6A24D1E5EEEEA0018C3F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -317,6 +508,14 @@
 				F5F6A20D1E5EE8220018C3F7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F5F6A2461E5EEEEA0018C3F7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5F6A2471E5EEEEA0018C3F7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -416,11 +615,13 @@
 		F5F6A2291E5EE8220018C3F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5H99ZYMEE4;
+				CODE_SIGN_ENTITLEMENTS = makingHer/makingHer.entitlements;
+				DEVELOPMENT_TEAM = 4W2YSC7A3U;
 				INFOPLIST_FILE = makingHer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer;
+				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -429,11 +630,13 @@
 		F5F6A22A1E5EE8220018C3F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5H99ZYMEE4;
+				CODE_SIGN_ENTITLEMENTS = makingHer/makingHer.entitlements;
+				DEVELOPMENT_TEAM = 4W2YSC7A3U;
 				INFOPLIST_FILE = makingHer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer;
+				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -497,6 +700,58 @@
 			};
 			name = Release;
 		};
+		F5F6A2511E5EEEEA0018C3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4W2YSC7A3U;
+				INFOPLIST_FILE = herCallUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer01.herCallUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5F6A2521E5EEEEA0018C3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4W2YSC7A3U;
+				INFOPLIST_FILE = herCallUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer01.herCallUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F5F6A2541E5EEEEA0018C3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4W2YSC7A3U;
+				INFOPLIST_FILE = herCall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer01.herCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5F6A2551E5EEEEA0018C3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4W2YSC7A3U;
+				INFOPLIST_FILE = herCall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.makingHer01.herCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +785,22 @@
 			buildConfigurations = (
 				F5F6A22F1E5EE8220018C3F7 /* Debug */,
 				F5F6A2301E5EE8220018C3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5F6A2501E5EEEEA0018C3F7 /* Build configuration list for PBXNativeTarget "herCallUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F6A2511E5EEEEA0018C3F7 /* Debug */,
+				F5F6A2521E5EEEEA0018C3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5F6A2531E5EEEEA0018C3F7 /* Build configuration list for PBXNativeTarget "herCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F6A2541E5EEEEA0018C3F7 /* Debug */,
+				F5F6A2551E5EEEEA0018C3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

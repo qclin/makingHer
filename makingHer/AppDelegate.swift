@@ -8,13 +8,27 @@
 
 import UIKit
 import CoreData
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
+    typealias SiriAccessCompletionHandler = (Bool) -> Void
+    func requestSiriAccess(
+        completionHandler: @escaping SiriAccessCompletionHandler){
+        INPreferences.requestSiriAuthorization {status in
+            switch status{
+            case .authorized:
+                completionHandler(true)
+            default:
+                completionHandler(false)
+            }
+        }
+    }
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
