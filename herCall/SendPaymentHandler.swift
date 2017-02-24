@@ -13,9 +13,45 @@ class SendPaymentHandler: INSendPaymentIntent, INSendPaymentIntentHandling {
     
     func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
         
+        func report(code: INSendPaymentIntentResponseCode){
+            completion(INSendPaymentIntentResponse(code: code, userActivity: nil))
+    
+            report(code: .ready)
+            guard let amount = intent.currencyAmount?.amount?.doubleValue else {
+                report(code: .failure)
+                return
+            }
+            report(code: .success)
+        }
     }
     
     func confirm(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
+        func report(code: INSendPaymentIntentResponseCode){
+            completion(INSendPaymentIntentResponse(code: code, userActivity: nil))
+            
+            report(code: .ready)
+            guard let amount = intent.currencyAmount?.amount?.doubleValue else {
+                report(code: .failure)
+                return
+            }
+            
+            let minimumPayment = 5.0
+            let maximumPayment = 20.0
+            if amount < minimumPayment {
+                report(code: .failurePaymentsAmountBelowMinimum)
+                return
+            }
+            if amount > maximumPayment {
+                report(code: .failurePaymentsAmountAboveMaximum)
+                return
+            }
+            // do the actual work here
+            report(code: .inProgress)
+            // when done, signal that you have either successfully finished 
+            // for failed 
+            report(code: .success) // or .failure
+            
+        }
         
     }
     
